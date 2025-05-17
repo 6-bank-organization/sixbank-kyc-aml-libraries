@@ -1,10 +1,24 @@
 package com.sixbank.kyclibraries.enums;
 
 /**
- * Represents admin roles within the KYC system
+ * Enum representing the different administrative roles available
+ * within the KYC (Know Your Customer) system.
  */
 public enum AdminRole {
-    KYC_ADMIN,         // Can configure document types, file types, and rejection reasons
-    KYC_VERIFIER,      // Can only verify KYC applications
-    SYSTEM_ADMIN       // Has all privileges
+
+    /**
+     * KYC Administrator - has permissions to configure document types,
+     * file types, and define rejection reasons.
+     */
+    KYC_ADMIN,
+
+    /**
+     * KYC Verifier - limited to verifying submitted KYC applications.
+     */
+    KYC_VERIFIER,
+
+    /**
+     * System Administrator - has full system privileges.
+     */
+    SYSTEM_ADMIN
 }

@@ -1,12 +1,33 @@
 package com.sixbank.kyclibraries.enums;
 
 /**
- * Represents the types of rejection reasons
+ * Enum defining the various types of rejection reasons
+ * that may be applied to a document or application during KYC.
  */
 public enum RejectionType {
-    DOCUMENT_QUALITY,  // Issues with document image quality
-    DOCUMENT_VALIDITY, // Issues with document validity (expired, tampered)
-    LIVENESS_CHECK,    // Issues with liveness check
-    INFORMATION_MISMATCH, // Information doesn't match across documents
-    OTHER              // Other reasons
+
+    /**
+     * Rejection due to poor document image quality (e.g., blurry or unclear).
+     */
+    DOCUMENT_QUALITY,
+
+    /**
+     * Rejection due to document validity issues (e.g., expired, tampered).
+     */
+    DOCUMENT_VALIDITY,
+
+    /**
+     * Rejection due to failure in the liveness check process.
+     */
+    LIVENESS_CHECK,
+
+    /**
+     * Rejection due to mismatched information across submitted documents.
+     */
+    INFORMATION_MISMATCH,
+
+    /**
+     * Other miscellaneous reasons not categorized above.
+     */
+    OTHER
 }

@@ -1,12 +1,33 @@
 package com.sixbank.kyclibraries.enums;
 
 /**
- * Represents the possible statuses of document submissions
+ * Enum representing the different stages of a document's submission
+ * and review process within the KYC workflow.
  */
 public enum SubmissionStatus {
-    PENDING,           // Document has been requested but not uploaded
-    UPLOADED,          // Document has been uploaded but not verified
-    UNDER_REVIEW,      // Document is being reviewed by admin
-    REJECTED,          // Document has been rejected
-    APPROVED           // Document has been approved
+
+    /**
+     * Document is requested but has not yet been uploaded.
+     */
+    PENDING,
+
+    /**
+     * Document has been uploaded but is awaiting verification.
+     */
+    UPLOADED,
+
+    /**
+     * Document is currently under review by an admin.
+     */
+    UNDER_REVIEW,
+
+    /**
+     * Document has been reviewed and rejected.
+     */
+    REJECTED,
+
+    /**
+     * Document has been reviewed and approved.
+     */
+    APPROVED
 }
