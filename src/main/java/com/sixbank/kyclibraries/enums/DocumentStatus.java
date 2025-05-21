@@ -3,7 +3,7 @@ package com.sixbank.kyclibraries.enums;
 /**
  * Enum representing the status of a KYC document during the verification lifecycle.
  *
- * <p>This status is used within the {@link 'UploadedDocument'} entity to track
+ * <p>This status is used within the UploadedDocument entity to track
  * the state of a document submitted by the user for KYC verification.</p>
  *
  * <ul>
